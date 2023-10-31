@@ -141,7 +141,7 @@ body {
   color: white;
 }
 .color::after {
-  content: url("/icons/Arrow1.svg");
+  content: url("/icons/Arrow 1.svg");
   position: relative;
   left: 16px;
   top: 0;
@@ -309,27 +309,18 @@ body {
   line-height: 28px; /* 175% */
   opacity: 0.7;
 }
-.feedback {
-  background: var(--Grey);
-  opacity: 0.8;
-  padding: 130px 160px 130px 160px;
+.asked {
+  padding: 128px 162px 128px 158px;
 }
-.feedback__content {
+.asked__content {
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 5;
-  column-gap: 110px;
-}
-.feedback__text {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.feedback__text-title h3 {
-  color: var(--Dark-blue, #282938);
 
+  column-gap: 136px;
+}
+.asked__text-title h3 {
+  color: var(--Dark-blue);
+  width: 328px;
   /* Heading 3 */
   font-family: Poppins;
   font-size: 38px;
@@ -337,18 +328,114 @@ body {
   font-weight: 600;
   line-height: 56px; /* 147.368% */
 }
-.feedback__text-desc p {
+.asked__text-desc p {
+  color: var(--Royal-Blue);
+
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+  opacity: 0.87;
+}
+.asked__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 63px;
+}
+.asked__card {
+  display: flex;
+  column-gap: 59px;
+  padding: 10px;
+
+  border-bottom: 1px solid grey;
+}
+.asked__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.asked__card-text h6 {
+  color: var(--Royal-Blue, #2405f2);
+
+  /* Heading 6 */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
+}
+.asked__card-title h6 {
   color: var(--Dark-blue, #282938);
-  width: 327px;
-  /* Paragraph */
+
+  /* Heading 6 */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
+}
+.askedcarddesc p {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+  transition: 1s;
+}
+.asked__card-btn {
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+  transition: 600ms;
+}
+.websait {
+  padding: 128px 162px 128px 158px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.websait__content {
+  display: flex;
+  width: 1280px;
+  height: 691px;
+  background: #1c1e53;
+}
+.websait__text {
+  padding: 96px 96px 261px 96px;
+  background-image: url("/img/woman-writing-on-paper-3228878.png");
+  background-color: rgb(28, 30, 83);
+  background-repeat: no-repeat;
+}
+.websait__text-title h1 {
+  color: var(--White, #fff);
+  width: 464px;
+  /* Heading 1 */
+  font-family: Poppins;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 74px; /* 137.037% */
+}
+.websait__text-desc p {
+  color: #fff;
+  width: 464px;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 28px; /* 175% */
 }
-.feedback__card-desc h5 {
-  color: var(--Dark-blue, #282938);
+.websait__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 96px 96px 48px 96px;
+}
+.websait__input-title h5 {
+  color: #fff;
 
   /* Heading 5 */
   font-family: Poppins;
@@ -357,62 +444,97 @@ body {
   font-weight: 500;
   line-height: 48px; /* 150% */
 }
-.feedback__card-content {
-  display: flex;
-  column-gap: 485px;
-}
-.feedback__card-content-account {
-  display: flex;
-  column-gap: 9.63px;
-}
-.feedback__card-content-img img {
-  border-radius: 50%;
-}
-/* .feedback__card-content-card {
-  display: flex;
-  flex-direction: column;
-  gap: 1px; */
-
-.feedback__card {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
-.feedback__card-content-name h5 {
-  color: var(--Dark-blue, #282938);
+.websait__input-desc p {
+  color: var(--Grey);
+  width: 432px;
   font-family: Poppins;
-  width: 180px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+.websait__inputs-name input[type="text"] {
+  padding-left: 32px;
+  width: 432px;
+  height: 64px;
+  border-radius: 8px;
+  color: var(--Grey);
+  outline: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  background-color: rgb(28, 30, 83);
+}
+::placeholder {
+  color: var(--Grey);
+
+  /* Paragraph */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.websait__inputs-email input[type="email"] {
+  padding-left: 32px;
+  width: 432px;
+  height: 64px;
+  border-radius: 8px;
+  color: var(--Grey);
+  outline: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  background-color: rgb(28, 30, 83);
+}
+.websait__inputs-figmaURL input[type="url"] {
+  padding-left: 32px;
+  width: 432px;
+  height: 64px;
+  border-radius: 8px;
+  color: var(--Grey);
+  outline: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  background-color: rgb(28, 30, 83);
+}
+.websait__input-btn {
+  display: flex;
+  width: 432px;
+  height: 64px;
+  padding: 15px 51px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 41px;
+  background: #fcd980;
+  margin-top: 30px;
+}
+.websait__input-btn a {
+  color: #1b1c2b;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 177.778% */
+  text-decoration: none;
+}
+.websait__inputs-btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 28px;
+}
+.websait__inputs-btn1 a {
+  color: var(--White, #fff);
+  font-family: Poppins;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 32px; /* 177.778% */
-}
-.feedback__card-content-duty p {
-  color: var(--Dark-blue, #282938);
-  font-family: Poppins;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 28px; /* 233.333% */
-}
-.feedback__content-btns a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
-  width: 50px;
-  height: 50px;
-  font-size: 50px;
-  color: gray;
 }
-.feedback__content-btns {
-  display: flex;
-}
-.feedback__content-btns a:hover {
-  background-color: #5239fa;
-  border-radius: 50%;
-  color: #fff;
+.websait__inputs-btn1 a:after {
+  content: url("/icons/Arrow22.svg");
+  position: relative;
+  top: 0;
+  left: 30px;
 }
 @media screen and (max-width: 767px) {
   .header-burger {
@@ -631,6 +753,85 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 280px;
+  }
+  .asked {
+    padding: 30px 90px 180px 90px;
+  }
+  .asked__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .asked__cards {
+    padding-top: 60px;
+  }
+  .asked__text {
+    text-align: center;
+  }
+  .asked__card-title h6 {
+    font-size: 14px;
+    width: 150px;
+  }
+  .askedcarddesc p {
+    font-size: 20px;
+    text-align: center;
+    width: 220px;
+  }
+  .websait {
+    padding: 30px 90px 0 90px;
+  }
+  .websait__text {
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .websait__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    height: 1300px;
+  }
+  .websait__text-title h1 {
+    font-size: 25px;
+    width: 380px;
+  }
+  .websait__text-desc p {
+    width: 380px;
+  }
+  .websait__inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 374px;
+  }
+  .websait__input-title h5 {
+    width: 280px;
+  }
+  .websait__input-desc p {
+    width: 380px;
+  }
+  .websait__inputs-name input[type="text"] {
+    width: 354px;
+  }
+  .websait__inputs-email input[type="email"] {
+    width: 354px;
+  }
+  .websait__inputs-figmaURL input[type="url"] {
+    width: 354px;
+  }
+  .websait__input-btn {
+    width: 354px;
+  }
+  .websait__inputs-btn1 {
     width: 280px;
   }
 }
